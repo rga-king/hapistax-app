@@ -1,4 +1,40 @@
 :root {
+
+  /* colours */
+  /* GREY */
+  --colour-grey-050: #F7F7F7;
+  --colour-grey-100: #E1E1E1;
+  --colour-grey-200: #CFCFCF;
+  --colour-grey-300: #B1B1B1;
+  --colour-grey-400: #9E9E9E;
+  --colour-grey-500: #7E7E7E;
+  --colour-grey-600: #626262;
+  --colour-grey-700: #515151;
+  --colour-grey-800: #3B3B3B;
+  --colour-grey-900: #222222;
+
+  --colour-white: #fff;
+  --colour-green: #33cc33;
+
+  --border-dash: 1px dashed #9E9E9E;
+  --box-shadow: 2px 2px 8px -4px rgba(94,93,93,0.87);
+}
+
+
+html, body {
+ font-size: 16px;
+ margin: 0;
+ padding: 0;
+ color: var(--colour-grey-700);
+}
+
+h1, h2, h3 {
+ margin: 0;
+ padding: 0;
+ color: var(--colour-grey-900);
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -104,4 +140,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

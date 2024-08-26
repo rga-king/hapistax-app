@@ -1,0 +1,17 @@
+a.link {
+  color: var(--colour-grey-700);
+  text-decoration: none;
+  /* padding-bottom: 1px; */
+  /* line-height: 1rem; */
+  /* background-color: aqua; */
+  z-index: 20;
+  margin: 0 0 12px;
+  border-bottom: 1px dashed transparent;
+
+
+}
+
+a.link:hover {
+  color: var(--colour-grey-600);
+  border-bottom: 1px dashed green;
+}

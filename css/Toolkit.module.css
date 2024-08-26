@@ -1,0 +1,44 @@
+@import "./mixins.module.css";
+
+/* .container {
+  composes: sectionWrapper from "./mixins.module.css";
+  width: 50%;
+} */
+
+.toolkit {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.toolkitH3 {
+  /* font: 1.2rem "Menlo", "Consolas", monospace; */
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+
+.logoContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 8px 0;
+  border-radius: 25px;
+  /* border: 2px solid #ccc; */
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+}
+
+.logoWrapper {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--colour-white);
+  /* border: 2px solid var(--colour-grey-100); */
+  border-radius: 4px;
+  background-color: var(--colour-white);
+}
+
+.logoWrapper img {
+  border-radius: 4px;
+}

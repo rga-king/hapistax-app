@@ -1,0 +1,73 @@
+@import "./mixins.module.css";
+
+.container {
+  composes: sectionWrapper from "./mixins.module.css";
+  width: 40%;
+  /* font-size: 1.25rem; */
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+
+.container p {
+  /* margin: 0; */
+}
+
+.container img {
+  margin-top: 10px
+}
+
+.links {
+  list-style: none;
+  /* padding-right: 20px; */
+  margin: 0 0 0 12px;
+  padding: 0;
+
+  text-transform: uppercase;
+  font: 700 2rem var(--font-lateef);
+}
+
+.links li {
+  /* margin: 0; */
+  /* background-color: aliceblue;
+  border: 1px solid; */
+  line-height: 2.25rem;
+  /* background-color: blue; */
+
+}
+
+.links li a {
+    display: block;
+}
+
+a.linkedIn:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ul.aboutMeList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+ul.aboutMeList li {
+  position: relative;
+  padding-left: 40px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+ul.aboutMeList li::before {
+  content: url("../assets/icons/check_box.svg");
+  position: absolute;
+  left: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+} */

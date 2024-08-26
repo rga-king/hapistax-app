@@ -1,0 +1,6 @@
+@import "./mixins.module.css";
+
+.container {
+  composes: sectionWrapper from "./mixins.module.css";
+  width: 100%;
+}

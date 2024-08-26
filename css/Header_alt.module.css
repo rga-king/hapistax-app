@@ -1,0 +1,50 @@
+@import "./mixins.module.css";
+
+.header {
+  composes: centreContent from "./mixins.module.css";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  /* border-bottom: var(--border-dash); */
+  margin: 0 auto !important;
+  background-color: beige;
+  border-radius: 0 0 10px 10px;
+}
+
+.moreInfo {
+  font-weight: 200;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.link {
+  font: 700 2rem var(--font-lateef);
+  text-transform: uppercase;
+  color: var(--colour-grey-500);
+  text-decoration: none;
+}
+
+.divider {
+  padding: 0 20px;
+}
+
+/* .hapistax {
+  display: flex;
+  align-items: flex-end;
+  font: 700 2rem var(--font-lexend-peta);
+} */
+
+/* .i {
+  color: #6aa84f;
+  font-weight: 400;
+} */
+
+/* .contact {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-family: monospace;
+  color: purple;
+} */

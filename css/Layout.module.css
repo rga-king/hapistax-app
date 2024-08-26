@@ -1,0 +1,11 @@
+@import "./mixins.module.css";
+
+.row {
+  composes: centreContent from "./mixins.module.css";
+  display: flex;
+  justify-content: space-between;
+}
+
+.row section:not(:first-child) {
+  /* margin-left: 50px; */
+}
