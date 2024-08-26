@@ -2,7 +2,7 @@ import Image from "next/image";
 import javascript from "@/assets/images/toolkit/javascript.svg";
 import styles from "@/css/Toolkit.module.css";
 
-export default function Toolkit({toolkit = []}) {
+export default function Toolkit({ toolkit = [] }) {
   return (
     <>
       <h3 className={styles.toolkitH3}>TOOLKIT</h3>
@@ -14,22 +14,7 @@ export default function Toolkit({toolkit = []}) {
             </div>
           </div>
         ))}
-        {/* <div className={styles.logoContainer}>
-          <div className={styles.logoWrapper}>
-            <Image src={javascript} width="30" height="30" alt="Javascript " />
-          </div>
-        </div>
-        <div className={styles.logoContainer}>
-          <div className={styles.logoWrapper}>
-            <Image src={javascript} width="30" height="30" alt="Javascript " />
-          </div>
-        </div>
-        <div className={styles.logoContainer}>
-          <div className={styles.logoWrapper}>
-            <Image src={javascript} width="30" height="30" alt="Javascript " />
-          </div>
-        </div> */}
       </div>
     </>
-  )
+  );
 }

@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <div className={styles.footer}>
-      <p>&copy; Robin King {year}</p> 
+      <p>&copy; Robin King {year}</p>
     </div>
-  )
+  );
 }

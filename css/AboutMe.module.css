@@ -14,7 +14,7 @@
 }
 
 .container img {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 .links {
@@ -33,18 +33,15 @@
   border: 1px solid; */
   line-height: 2.25rem;
   /* background-color: blue; */
-
 }
 
 .links li a {
-    display: block;
+  display: block;
 }
 
 a.linkedIn:hover {
   text-decoration: underline;
 }
-
-
 
 /* ul.aboutMeList {
   list-style: none;

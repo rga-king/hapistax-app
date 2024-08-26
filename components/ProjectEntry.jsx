@@ -5,7 +5,7 @@ import styles from "@/css/Project.module.css";
 import siteStyles from "@/css/Site.module.css";
 
 export default function ProjectEntry({
-  title: { heading, link  },
+  title: { heading, link },
   image: { src, alt, width = "350", height = "300" },
   description,
   toolkit = []
@@ -13,22 +13,19 @@ export default function ProjectEntry({
   return (
     <div className={styles.project}>
       <div className={styles.image}>
-      <Image
-        src={src}
-        width={width}
-        height={height}
-        alt={alt}
-        priority={true}
-        
-      />
+        <Image src={src} width={width} height={height} alt={alt} priority={true} />
       </div>
       <div className={styles.description}>
-        <h3><Link href="" className={siteStyles.link}>{heading}</Link></h3>
+        <h3>
+          <Link href="" className={siteStyles.link}>
+            {heading}
+          </Link>
+        </h3>
         <p>{description}</p>
       </div>
       <div className={styles.toolkit}>
-        <Toolkit toolkit={toolkit}/>
+        <Toolkit toolkit={toolkit} />
       </div>
     </div>
-  )
+  );
 }

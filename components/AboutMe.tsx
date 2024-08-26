@@ -15,14 +15,27 @@ export default function AboutMe() {
         <li>Curriculum Vitae</li>
         <li>Bio</li>
       </ul> */}
-      <Link href={LINKEDIN_URL} className={styles.linkedIn} target="_blank" rel="noopener"><Image src={linkedIn} width="140" height="118" alt="" /></Link>
+      <Link href={LINKEDIN_URL} className={styles.linkedIn} target="_blank" rel="noopener">
+        <Image src={linkedIn} width="140" height="118" alt="" />
+      </Link>
       <ul className={styles.links}>
-        <li><Link href={LINKEDIN_URL} className={siteStyles.link}>Linked In</Link></li>
+        <li>
+          <Link href={LINKEDIN_URL} className={siteStyles.link}>
+            Linked In
+          </Link>
+        </li>
         {/* <li>Testimonials</li> */}
-        <li><Link href="/cv" className={siteStyles.link}>Curriculum Vitae</Link></li>
-        <li><Link href="/testimonials" className={siteStyles.link}>Testimonials & Bio</Link></li>
+        <li>
+          <Link href="/cv" className={siteStyles.link}>
+            Curriculum Vitae
+          </Link>
+        </li>
+        <li>
+          <Link href="/testimonials" className={siteStyles.link}>
+            Testimonials & Bio
+          </Link>
+        </li>
       </ul>
     </section>
-
-  )
+  );
 }
