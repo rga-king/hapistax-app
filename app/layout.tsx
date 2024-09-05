@@ -1,36 +1,33 @@
 import type { Metadata } from "next";
-import Header from "@/components/BaseHeader";
 import Footer from "@/components/Footer";
 import { Inter } from "next/font/google";
 import "@/css/globals.css";
-import { lateef, lexendPeta } from '@/lib/fonts';
+import { lateef, lexendPeta } from "@/lib/fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "HAPiSTAX",
-  description: "Robin King, software developer, based in Harpenden UK",
+  description:
+    "HAPiSTAX is the online home of Robin King, software developer, based in Harpenden UK",
   icons: {
-    icon: '/favicon.png'
+    icon: "/favicon.png"
   },
   robots: {
-    index: false,
-    follow: false,
-    nocache: true,
-  },
+    index: true,
+    follow: true,
+    nocache: false
+  }
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={
-      `${lexendPeta.variable} ${lateef.variable}`
-    }>
+    <html lang="en" className={`${lexendPeta.variable} ${lateef.variable}`}>
       <body className={inter.className}>
-        {/* <Header /> */}
         {children}
         <Footer />
       </body>

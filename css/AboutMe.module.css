@@ -1,12 +1,8 @@
-@import "./mixins.module.css";
-
 .container {
-  composes: sectionWrapper from "./mixins.module.css";
   width: 40%;
-  /* font-size: 1.25rem; */
   display: flex;
   justify-content: flex-end;
-  /* align-items: center; */
+  align-items: flex-end;
 }
 
 .container p {
@@ -14,12 +10,18 @@
 }
 
 .container img {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+}
+
+img.mugshot {
+  border-radius: 100px;
+  border: 8px solid var(--colour-grey-100);
+  object-fit: cover;
+  margin-right: 20px;
 }
 
 .links {
   list-style: none;
-  /* padding-right: 20px; */
   margin: 0 0 0 12px;
   padding: 0;
 
@@ -28,11 +30,7 @@
 }
 
 .links li {
-  /* margin: 0; */
-  /* background-color: aliceblue;
-  border: 1px solid; */
   line-height: 2.25rem;
-  /* background-color: blue; */
 }
 
 .links li a {
@@ -40,7 +38,11 @@
 }
 
 a.linkedIn:hover {
-  text-decoration: underline;
+  opacity: var(--hover-opacity);
+}
+
+a.linkedIn img {
+  display: block;
 }
 
 /* ul.aboutMeList {
@@ -68,3 +70,37 @@ ul.aboutMeList li::before {
   height: 20px;
   vertical-align: middle;
 } */
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    .mugshot {
+      margin: 0 0 20px;
+      width: 70px;
+      height: 70px;
+    }
+    .linkedIn img {
+      height: auto;
+      width: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    .mugshot {
+      border-width: 4px;
+      margin: 0 20px 0 0;
+      width: 48px;
+      height: 48px;
+    }
+    .linkedIn img {
+      height: 50px;
+      width: auto;
+    }
+  }
+}

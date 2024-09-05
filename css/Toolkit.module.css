@@ -1,20 +1,24 @@
-@import "./mixins.module.css";
-
-/* .container {
-  composes: sectionWrapper from "./mixins.module.css";
-  width: 50%;
-} */
-
 .toolkit {
   display: inline-flex;
   flex-wrap: wrap;
 }
 
-.toolkitH3 {
-  /* font: 1.2rem "Menlo", "Consolas", monospace; */
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.heading img {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
+
+.heading h4 {
   text-transform: uppercase;
   font-weight: 200;
-  margin-bottom: 1em;
+  font-size: 1.2rem;
 }
 
 .logoContainer {
@@ -25,7 +29,6 @@
   justify-content: center;
   margin: 0 8px 8px 0;
   border-radius: 25px;
-  /* border: 2px solid #ccc; */
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
 }
@@ -34,7 +37,6 @@
   width: 30px;
   height: 30px;
   border: 2px solid var(--colour-white);
-  /* border: 2px solid var(--colour-grey-100); */
   border-radius: 4px;
   background-color: var(--colour-white);
 }
@@ -42,3 +44,9 @@
 .logoWrapper img {
   border-radius: 4px;
 }
+
+/* a[title]:hover::after {
+  content: attr(title);
+  background-color: white;
+  padding: 5px;
+} */

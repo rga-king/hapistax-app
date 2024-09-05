@@ -1,13 +1,19 @@
-import ProjectEntry from "@/components/ProjectEntry.jsx";
+import Image from "next/image";
+import Project from "@/components/Project.jsx";
 import { projects } from "@/data/projects";
+import portfolioIcon from "@/assets/icons/icon-collection.svg";
 import styles from "@/css/Portfolio.module.css";
 
 export default function MyPortfolio() {
   return (
     <section className={styles.container}>
-      <h2>Portfolio</h2>
+      <div className={styles.heading}>
+        <Image src={portfolioIcon} width={30} height={30} alt="Collection" />
+        <h2>Portfolio</h2>
+      </div>
+
       {projects?.map((project, index) => (
-        <ProjectEntry
+        <Project
           key={`project_${index}`}
           title={project.title}
           image={project.image}

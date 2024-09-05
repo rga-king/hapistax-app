@@ -1,6 +1,5 @@
-@import "./mixins.module.css";
-
 .footer {
-  composes: centreContent from "./mixins.module.css";
   border-top: var(--border-dash);
+  font: 700 2rem var(--font-lateef);
+  color: var(--colour-grey-700);
 }

@@ -1,6 +1,20 @@
-@import "./mixins.module.css";
-
 .container {
-  composes: sectionWrapper from "./mixins.module.css";
   width: 100%;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.heading img {
+  margin-right: 10px;
+}
+
+.heading h2 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2rem;
+  color: var(--colour-grey-900);
 }

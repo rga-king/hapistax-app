@@ -1,0 +1,22 @@
+.header,
+.portfolio {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+    margin-top: 20px
+  }
+}

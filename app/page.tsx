@@ -1,19 +1,21 @@
 import MyDetails from "@/components/MyDetails";
-// import Toolbox from "@/components/Toolbox";
 import AboutMe from "@/components/AboutMe";
+import HomeHeader from "@/components/HomeHeader";
 import Portfolio from "@/components/Portfolio.jsx";
-import styles from "@/css/Layout.module.css";
+import styles from "@/css/Home.module.css";
+import siteStyles from "@/css/Site.module.css";
 
 export default function Home() {
   return (
-    <main>
-      <div className={styles.row}>
-        <MyDetails />
-        <AboutMe />
+    <>
+      <div className={siteStyles.row}>
+        <HomeHeader />
       </div>
-      <div className={styles.row}>
-        <Portfolio />
-      </div>
-    </main>
+      <main>
+        <div className={`${siteStyles.row} ${styles.portfolio}`}>
+          <Portfolio />
+        </div>
+      </main>
+    </>
   );
 }

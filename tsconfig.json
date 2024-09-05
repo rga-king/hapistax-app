@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Portfolio.jsx", "components/ProjectEntry.jsx", "components/Toolkit.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Portfolio.jsx", "components/Project.jsx", "components/Toolkit.jsx"],
   "exclude": ["node_modules"]
 }

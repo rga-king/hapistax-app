@@ -1,15 +1,25 @@
-a.link {
-  color: var(--colour-grey-700);
-  text-decoration: none;
-  /* padding-bottom: 1px; */
-  /* line-height: 1rem; */
-  /* background-color: aqua; */
-  z-index: 20;
-  margin: 0 0 12px;
-  border-bottom: 1px dashed transparent;
+@media only screen and (min-width: 0) {
+  .row {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-a.link:hover {
-  color: var(--colour-grey-600);
-  border-bottom: 1px dashed green;
+@media only screen and (min-width: 769px) {
+  .row {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .row {
+    width: 70%;
+  }
 }
