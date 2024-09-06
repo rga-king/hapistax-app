@@ -10,7 +10,13 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: '', // <- TODO: put live domain name here
+        hostname: 'https://main.d2g99tioeorntt.amplifyapp.com',
+        port: '',
+        pathname: '/images/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'https://www.hapistax.com',
         port: '',
         pathname: '/images/**'
       }
