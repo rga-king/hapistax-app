@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Toolkit from "@/components/Toolkit.jsx";
 import styles from "@/css/Project.module.css";
-// import siteStyles from "@/css/Site.module.css";
 
 export default function Project({
   title: { heading, link },
@@ -17,7 +16,7 @@ export default function Project({
       </Link>
       <div className={styles.description}>
         <h3>
-          <Link href={link} className={styles.headingLink}>
+          <Link href={link} className={styles.headingLink} target="_blank">
             {heading}
           </Link>
         </h3>

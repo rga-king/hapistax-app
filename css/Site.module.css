@@ -4,6 +4,24 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .heading {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--colour-grey-900);
+    margin: 24px 0;
+  }
+
+  a.link {
+    text-decoration-style: dotted;
+    color: var(--colour-blue);
+    text-decoration-thickness: 2.5px;
+  }
+
+  a.link:hover {
+    text-decoration-color: var(--colour-hotpink);
+  }
 }
 
 @media only screen and (min-width: 769px) {

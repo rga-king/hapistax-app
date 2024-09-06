@@ -1,0 +1,12 @@
+.header {
+  border-bottom: var(--border-dash);
+  padding: 20px 0;
+}
+
+.header a {
+  color: black;
+}
+
+.header a:hover {
+  color: var(--colour-hotpink);
+}

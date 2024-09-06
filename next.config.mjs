@@ -10,13 +10,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'https://main.d2g99tioeorntt.amplifyapp.com',
-        port: '',
-        pathname: '/images/**'
-      },
-      {
-        protocol: 'https',
-        hostname: 'https://www.hapistax.com',
+        hostname: 'hapistax.netlify.app',
         port: '',
         pathname: '/images/**'
       }

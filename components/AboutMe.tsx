@@ -4,7 +4,7 @@ import { LINKEDIN_URL } from "@/lib/constants";
 import linkedIn from "@/assets/icons/LinkedIn-Logos/LI-In-Bug.png";
 import mugshot from "@/assets/images/mugshot.png";
 import styles from "@/css/AboutMe.module.css";
-// import siteStyles from "@/css/Site.module.css";
+import siteStyles from "@/css/Site.module.css";
 
 export default function AboutMe() {
   return (
@@ -23,13 +23,20 @@ export default function AboutMe() {
         height="102"
         alt="Robin King"
       />
-      <Link
-        href={LINKEDIN_URL}
-        className={styles.linkedIn}
-        target="_blank"
-        rel="noopener">
-        <Image src={linkedIn} width="140" height="118" alt="LinkedIn" />
-      </Link>
+      <div className={styles.linksWrapper}>
+        <Link
+          href={LINKEDIN_URL}
+          className={styles.linkedIn}
+          target="_blank"
+          rel="noopener">
+          <Image src={linkedIn} width="140" height="118" alt="LinkedIn" />
+        </Link>
+        <Link
+          className={`${siteStyles.link} ${styles.testimonialLink}`}
+          href="/testimonials">
+          Testimonials
+        </Link>
+      </div>
     </section>
   );
 }
