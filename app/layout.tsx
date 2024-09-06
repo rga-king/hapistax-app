@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   title: "HAPiSTAX",
   description:
     "HAPiSTAX is the online home of Robin King, software developer, based in Harpenden UK",
-  icons: {
-    icon: "/favicon.png"
-  },
   robots: {
     index: true,
     follow: true,
