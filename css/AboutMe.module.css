@@ -2,7 +2,7 @@
   width: 40%;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
 }
 
 img.mugshot {
@@ -12,98 +12,66 @@ img.mugshot {
   margin-right: 20px;
 }
 
-.links {
-  list-style: none;
-  margin: 0 0 0 12px;
-  padding: 0;
-
-  text-transform: uppercase;
-  font: 700 2rem var(--font-lateef);
-}
-
-.links li {
-  line-height: 2.25rem;
-}
-
-.links li a {
-  display: block;
-}
-
-a.linkedIn img {
-  height: 90px;
-  width: auto;
-}
-
-a.linkedIn:hover {
-  opacity: var(--hover-opacity);
-}
-
-a.linkedIn img {
-  display: block;
-}
-
-a.testimonialLink {
-  display: block;
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin-top: 8px;
-}
-
-.linksWrapper {
+ul.aboutMeList {
   display: flex;
   flex-direction: column;
-}
-
-/* ul.aboutMeList {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
   margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 1rem;
+  font: 500 2rem var(--font-lateef);
 }
 
 ul.aboutMeList li {
   position: relative;
-  padding-left: 40px;
-  line-height: 1.2;
-  margin-bottom: 10px;
+  padding-left: 30px;
+  line-height: 1;
+  margin-bottom: 4px;
 }
 
-ul.aboutMeList li::before {
-  content: url("../assets/icons/check_box.svg");
+ul.aboutMeList li:before {
+  content: url("../assets/icons/person_book_24.svg");
+
   position: absolute;
   left: 0;
-  top: 40%;
-  transform: translateY(-50%);
+  transform: translateY(20%);
   width: 20px;
   height: 20px;
-  vertical-align: middle;
-} */
+}
+
+ul.aboutMeList a {
+  text-decoration: none;
+  color: var(--colour--grey-700);
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--colour-hotpink);
+    color: var(--colour-grey-500);
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .container {
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
     .mugshot {
       margin: 0 0 10px;
       width: 70px;
       height: 70px;
     }
-    .linksWrapper {
+    ul.aboutMeList {
       align-items: flex-end;
     }
-    .linkedIn img {
-      height: auto;
-      width: 80px;
-    }
   }
-
 }
 
 @media only screen and (max-width: 650px) {
   .container {
+    /* width: 100%; */
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-top: 20px;
     .mugshot {
       border-width: 4px;
@@ -111,13 +79,23 @@ ul.aboutMeList li::before {
       width: 48px;
       height: 48px;
     }
-    .linksWrapper {
+    ul.aboutMeList {
       flex-direction: row;
+      & li {
+        margin-right: 20px;
+      }
     }
-    .linkedIn img {
-      height: 50px;
-      width: auto;
-      margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    ul.aboutMeList {
+      flex-direction: column;
+      align-items: flex-start;
+      & li {
+        margin-right: 0;
+      }
     }
   }
 }

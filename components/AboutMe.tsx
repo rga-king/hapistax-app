@@ -1,42 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LINKEDIN_URL } from "@/lib/constants";
-import linkedIn from "@/assets/icons/LinkedIn-Logos/LI-In-Bug.png";
+import { LINKEDIN_URL, TESTIMONIALS_LINK, CV_LINK, BIO_LINK } from "@/lib/constants";
 import mugshot from "@/assets/images/mugshot.png";
 import styles from "@/css/AboutMe.module.css";
-import siteStyles from "@/css/Site.module.css";
 
 export default function AboutMe() {
   return (
     <section className={styles.container}>
-      {/* <p>Find out more about me through</p>
-      <ul className={styles.aboutMeList}>
-        <li>LinkedIn</li>
-        <li>Testimonials</li>
-        <li>Curriculum Vitae</li>
-        <li>Bio</li>
-      </ul> */}
       <Image
         className={styles.mugshot}
         src={mugshot}
-        width="102"
-        height="102"
+        width="122"
+        height="122"
         alt="Robin King"
       />
-      <div className={styles.linksWrapper}>
-        <Link
-          href={LINKEDIN_URL}
-          className={styles.linkedIn}
-          target="_blank"
-          rel="noopener">
-          <Image src={linkedIn} width="140" height="118" alt="LinkedIn" />
-        </Link>
-        <Link
-          className={`${siteStyles.link} ${styles.testimonialLink}`}
-          href="/testimonials">
-          Testimonials
-        </Link>
-      </div>
+      <ul className={styles.aboutMeList}>
+        <li>
+          {" "}
+          <Link href={LINKEDIN_URL} target="_blank" rel="noopener">
+            LinkedIn
+          </Link>
+        </li>
+        <li>
+          <Link href={TESTIMONIALS_LINK}>Testimonials</Link>
+        </li>
+        {/* <li>
+          <Link href={CV_LINK}>Curriculum Vitae</Link>
+        </li> */}
+        {/* <li>
+          <Link href={BIO_LINK}>Bio</Link>
+        </li> */}
+      </ul>
     </section>
   );
 }
