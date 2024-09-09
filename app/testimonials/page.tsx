@@ -12,8 +12,8 @@ export default function Testimonials() {
       <Header />
       <div className={siteStyles.row}>
         <h1 className={siteStyles.heading}>Recommendations</h1>
-        {testimonials?.map((testimonial) => (
-          <div className={styles.testimonial}>
+        {testimonials?.map((testimonial, index) => (
+          <div key={`_${index}`} className={styles.testimonial}>
             <h2>
               <Link
                 className={siteStyles.headingLink}
