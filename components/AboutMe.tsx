@@ -22,7 +22,7 @@ export default function AboutMe() {
           </Link>
         </li>
         <li>
-          <Link href={TESTIMONIALS_LINK}>Testimonials</Link>
+          <Link href={TESTIMONIALS_LINK}>Recommendations</Link>
         </li>
         {/* <li>
           <Link href={CV_LINK}>Curriculum Vitae</Link>
