@@ -1,59 +1,48 @@
-  .project {
-    display: flex;
-    flex-direction: column;
-    border-top: var(--border-dash);
-    padding-top: 30px;
-    margin-top: 10px;
-  }
+.project {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-dash);
+  padding-top: 30px;
+  margin-top: 10px;
+}
 
-  .image {
-    display: none;
-    height: 300px;
-    box-shadow: 2px 2px 8px -4px rgba(94, 93, 93, 0.87);
-  }
+.image {
+  display: none;
+  height: 300px;
+  box-shadow: 2px 2px 8px -4px rgba(94, 93, 93, 0.87);
+}
 
-  .image:hover {
-    opacity: var(--hover-opacity);
-  }
+.image:hover {
+  opacity: var(--hover-opacity);
+}
 
-  .image img {
-    object-fit: cover;
-    margin: auto;
-  }
+.image img {
+  object-fit: cover;
+  margin: auto;
+}
 
-  a.headingLink {
-    color: var(--colour-grey-700);
-    text-decoration: none;
-  }
+.description {
+  margin: 0 0px;
+}
 
-  a.headingLink:hover {
-    color: var(--colour-grey-500);
-    text-decoration: var(--colour-hotpink) underline dashed 3px;
-    text-underline-offset: 5px;
-  }
+.description h3 {
+  margin: 0;
+  padding: 0;
+  font: 600 2.6rem var(--font-lateef);
+  line-height: 1.4rem;
+}
 
-  .description {
-    margin: 0 0px;
-  }
+.description p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
 
-  .description h3 {
-    margin: 0;
-    padding: 0;
-    font: 600 2.6rem var(--font-lateef);
-    line-height: 1.4rem;
-  }
-
-  .description p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    line-height: 2rem;
-  }
-
-  .toolkit {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.toolkit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 @media only screen and (min-width: 1025px) {
   .project {

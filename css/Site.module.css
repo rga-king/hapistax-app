@@ -22,6 +22,17 @@
   a.link:hover {
     text-decoration-color: var(--colour-hotpink);
   }
+
+  .headingLink {
+    color: var(--colour-grey-700);
+    text-decoration: none;
+  }
+
+  .headingLink:hover {
+    color: var(--colour-grey-500);
+    text-decoration: var(--colour-hotpink) underline dotted 3px;
+    text-underline-offset: 5px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
