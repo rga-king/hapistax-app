@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Project from "@/components/Project.jsx";
+import Project from "@/components/Project";
 import { projects } from "@/data/projects";
 import portfolioIcon from "@/assets/icons/icon-collection.svg";
 import styles from "@/css/Portfolio.module.css";

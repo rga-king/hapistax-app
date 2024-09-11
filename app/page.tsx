@@ -1,7 +1,7 @@
 import MyDetails from "@/components/MyDetails";
 import AboutMe from "@/components/AboutMe";
 import HomeHeader from "@/components/HomeHeader";
-import Portfolio from "@/components/Portfolio.jsx";
+import Portfolio from "@/components/Portfolio";
 import styles from "@/css/Home.module.css";
 import siteStyles from "@/css/Site.module.css";
 

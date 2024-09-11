@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import Toolkit from "@/components/Toolkit.jsx";
+import Toolkit from "@/components/Toolkit";
+import { ProjectProps } from "@/lib/types";
 import styles from "@/css/Project.module.css";
 import siteStyles from "@/css/Site.module.css";
 
 export default function Project({
   title: { heading, link },
-  image: { src, alt, width = "350", height = "300" },
+  image: { src, alt, width = 350, height = 300 },
   description,
   toolkit = []
-}) {
+}: ProjectProps) {
   return (
     <div className={styles.project}>
       <Link href={link} className={styles.image} target="_blank">

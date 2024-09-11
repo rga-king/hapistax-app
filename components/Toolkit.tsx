@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { ToolkitProps } from "@/lib/types";
 import toolkitIcon from "@/assets/icons/toolkit.svg";
 import styles from "@/css/Toolkit.module.css";
 import Link from "next/link";
 
-export default function Toolkit({ toolkit = [] }) {
+export default function Toolkit({ toolkit = [] }: ToolkitProps) {
   return (
     <>
       <div className={styles.heading}>

@@ -1,3 +1,6 @@
+import { Tool } from "@/lib/types";
+import { Projects } from "@/lib/types";
+
 import bmjLearning from "@/assets/images/bmj-logo.svg";
 import ecoventry from "@/assets/images/late-autumn-grapevine.jpeg";
 import aroundBritain from "@/assets/images/around-britain.png";
@@ -21,11 +24,11 @@ import awsSesImg from "@/assets/images/toolkit/ses.svg";
 import postgresImg from "@/assets/images/toolkit/postgres.png";
 import reduxImg from "@/assets/images/toolkit/redux.svg";
 
-const toolkit = {
+const toolkit: Record<string, Tool> = {
   javascript: {
     image: javaScriptImg,
     alt: "JavaScript",
-    href: "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" 
+    href: "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript"
   },
   typescript: {
     image: typeScriptImg,
@@ -41,7 +44,6 @@ const toolkit = {
     image: reduxImg,
     alt: "Redux Toolkit",
     href: "https://redux-toolkit.js.org/"
-
   },
   sass: {
     image: sassImg,
@@ -120,7 +122,7 @@ const toolkit = {
   }
 };
 
-export const projects = [
+export const projects: Projects = [
   {
     title: {
       heading: "BMJ Learning",
@@ -129,8 +131,8 @@ export const projects = [
     image: {
       src: bmjLearning,
       alt: "BMJ Learning website",
-      width: "220",
-      height: "130"
+      width: 220,
+      height: 130
     },
     description:
       "For the past two and a half years, I have been a full-stack developer at BMJ Learning, where my background in education has been a perfect fit. I work on a React frontend supported by a backend of REST APIs built with Node.js and Spring Boot, all deployed on AWS microservice platforms. Our agile development practices enable rapid feature development and are reinforced by comprehensive testing suites, including Cypress, Jest, and Jasmine, to ensure robust maintenance and reliability.",
@@ -189,19 +191,19 @@ export const projects = [
     },
     description:
       "This website documents my client's journey around the coast of Great Britain, started in 1999 and nearing completion this year 👏. Due to the extensive text content, I designed a clear, user-friendly structure. The client wanted a custom solution rather than standard blogging options, so I developed a unique design with a bespoke CMS, both built using Next.js and deployed via AWS Amplify. The data is managed with AWS DynamoDB for its flexibility and high performance.",
-      toolkit: [
-        toolkit.javascript,
-        toolkit.typescript,
-        toolkit.react,
-        toolkit.nextjs,
-        toolkit.css,
-        toolkit.nodejs,
-        toolkit.jest,
-        toolkit.cypress,
-        toolkit.dynamoDB,
-        toolkit.awsAmplify,
-        toolkit.awsLambda,
-        toolkit.awsSes
-      ]
+    toolkit: [
+      toolkit.javascript,
+      toolkit.typescript,
+      toolkit.react,
+      toolkit.nextjs,
+      toolkit.css,
+      toolkit.nodejs,
+      toolkit.jest,
+      toolkit.cypress,
+      toolkit.dynamoDB,
+      toolkit.awsAmplify,
+      toolkit.awsLambda,
+      toolkit.awsSes
+    ]
   }
 ];
