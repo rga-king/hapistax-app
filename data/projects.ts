@@ -1,6 +1,7 @@
 import { Tool } from "@/lib/types";
 import { Projects } from "@/lib/types";
 
+import cityPlumbing from "@/assets/images/city-plumbing.svg";
 import bmjLearning from "@/assets/images/bmj-logo.svg";
 import ecoventry from "@/assets/images/late-autumn-grapevine.jpeg";
 import aroundBritain from "@/assets/images/around-britain.png";
@@ -23,6 +24,12 @@ import awsApiGatewayImg from "@/assets/images/toolkit/apigateway.svg";
 import awsSesImg from "@/assets/images/toolkit/ses.svg";
 import postgresImg from "@/assets/images/toolkit/postgres.png";
 import reduxImg from "@/assets/images/toolkit/redux.svg";
+import awsInspector from "@/assets/images/toolkit/inspector.svg";
+import graphQL from "@/assets/images/toolkit/graphQl.svg";
+import playwright from "@/assets/images/toolkit/playwright.svg";
+import awsS3 from "@/assets/images/toolkit/s3.svg";
+import terraform from "@/assets/images/toolkit/terraform.svg";
+
 
 const toolkit: Record<string, Tool> = {
   javascript: {
@@ -119,10 +126,66 @@ const toolkit: Record<string, Tool> = {
     image: postgresImg,
     alt: "PostgreSQL",
     href: "https://www.postgresql.org/"
+  },
+  awsInspector: {
+    image: awsInspector,
+    alt: "Amazon Inspector",
+    href: "https://aws.amazon.com/inspector/"
+  },
+  graphQL: {
+    image: graphQL,
+    alt: "GraphQL",
+    href: "https://graphql.org/"
+  },
+  awsS3: {
+    image: awsS3,
+    alt: "Amazon Simple Storage Service",
+    href: "https://aws.amazon.com/s3/"
+  },
+  playwright: {
+    image: playwright,
+    alt: "Playwright",
+    href: "https://playwright.dev/"
+  },
+  terraform: {
+    image: terraform,
+    alt: "Terraform",
+    href: "https://developer.hashicorp.com/terraform"
   }
 };
 
 export const projects: Projects = [
+  {
+    title: {
+      heading: "City Plumbing",
+      link: "https://www.highbournegroup.co.uk/"
+    },
+    image: {
+      src: cityPlumbing,
+      alt: "City Plumbing website",
+      width: 220,
+      height: 130
+    },
+    description:
+      "I am currently a Software Engineer at City Plumbing, part of the Highbourne Group, where I contribute to the Platform Team developing security reporting tools and championing software development best practices. Previously, I worked on a Product Development Team, building a Next.js-based digital till application for retail stores to enhance sales opportunities and streamline the checkout experience.",
+    toolkit: [
+      toolkit.javascript,
+      toolkit.typescript,
+      toolkit.react,
+      toolkit.nextjs,
+      toolkit.sass,
+      toolkit.nodejs,
+      toolkit.springboot,
+      toolkit.jest,
+      toolkit.playwright,
+      toolkit.awsLambda,
+      toolkit.awsInspector,
+      toolkit.awsS3,
+      toolkit.graphQL,
+      toolkit.docker,
+      toolkit.terraform
+    ]
+  },
   {
     title: {
       heading: "BMJ Learning",
@@ -135,7 +198,7 @@ export const projects: Projects = [
       height: 130
     },
     description:
-      "For the past two and a half years, I have been a full-stack developer at BMJ Learning, where my background in education has been a perfect fit. I work on a React frontend supported by a backend of REST APIs built with Node.js and Spring Boot, all deployed on AWS microservice platforms. Our agile development practices enable rapid feature development and are reinforced by comprehensive testing suites, including Cypress, Jest, and Jasmine, to ensure robust maintenance and reliability.",
+      "Prior to City Plumbing, I was a full-stack developer at BMJ Learning, where my background in education proved a perfect fit. I worked on a React frontend supported by a backend of REST APIs built with Node.js and Spring Boot, all deployed on AWS microservice platforms. Our agile development practices enabled rapid feature development and were reinforced by comprehensive testing suites, including Cypress, Jest, and Jasmine, to ensure robust maintenance and reliability.",
     toolkit: [
       toolkit.javascript,
       toolkit.typescript,

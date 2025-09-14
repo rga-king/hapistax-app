@@ -38,3 +38,6 @@ next-env.d.ts
 # prettier configuration
 .prettierignore
 .prettierrc
+
+# Intellij (Webstorm)
+/.idea/

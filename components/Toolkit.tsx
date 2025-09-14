@@ -15,13 +15,13 @@ export default function Toolkit({ toolkit = [] }: ToolkitProps) {
         {toolkit?.map((tool, index) => (
           <div key={index} className={styles.logoContainer}>
             <div className={styles.logoWrapper}>
-              <Link href={tool.href} target="_blank">
+              <Link href={tool?.href || ""} target="_blank">
                 <Image
-                  src={tool.image}
+                  src={tool?.image}
                   width="30"
                   height="30"
-                  alt={tool.alt}
-                  title={tool.alt}
+                  alt={tool?.alt}
+                  title={tool?.alt}
                 />
               </Link>
             </div>
