@@ -1,12 +1,17 @@
+import Link from "next/link";
 import Image from "next/image";
-import { ToolkitProps } from "@/lib/types";
+import { Tool } from "@/lib/types";
 import toolkitIcon from "@/assets/icons/toolkit.svg";
 import styles from "@/css/Toolkit.module.css";
-import Link from "next/link";
+
+type ToolkitProps = {
+  toolkit?: Tool[];
+};
 
 export default function Toolkit({ toolkit = [] }: ToolkitProps) {
+  if (toolkit.length < 1) return null;
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.heading}>
         <Image src={toolkitIcon} width={30} height={30} alt="Spanner" />
         <h4>TOOLKIT</h4>
@@ -28,6 +33,6 @@ export default function Toolkit({ toolkit = [] }: ToolkitProps) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }

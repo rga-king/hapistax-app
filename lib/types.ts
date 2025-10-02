@@ -7,11 +7,6 @@ export type Tool = {
   alt: string;
 }
 
-// Type for a single Toolkit
-export type ToolkitProps = {
-  toolkit: Tool[];
-};
-
 // Type for a project title
 export type ProjectTitle = {
   heading: string;
@@ -26,13 +21,23 @@ export type ProjectImage = {
   height?: number;
 };
 
+// Type for a recommendation entry
+export type Recommendation = {
+  tag: String,
+  name: String,
+  position: String,
+  link: String,
+  text: String;
+}
+
 // Type for a single project
-export type ProjectProps = {
+export type Project = {
+  tag: String,
   title: ProjectTitle;
   image: ProjectImage;
   description: string;
   toolkit?: Tool[]; // Optional toolkit
-};
+}
 
 // Type for the array of projects
-export type Projects = ProjectProps[];
+export type Projects = Project[];

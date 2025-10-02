@@ -1,0 +1,25 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-dash);
+  padding-top: 30px;
+  margin-top: 10px;
+}
+
+.description {
+  margin: 0 0;
+}
+
+.description h3 {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  font: 600 2.6rem var(--font-lateef);
+  line-height: 1.4rem;
+}
+
+.description p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+}

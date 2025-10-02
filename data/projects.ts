@@ -156,6 +156,7 @@ const toolkit: Record<string, Tool> = {
 
 export const projects: Projects = [
   {
+    tag: "cps",
     title: {
       heading: "City Plumbing",
       link: "https://www.highbournegroup.co.uk/"
@@ -163,8 +164,8 @@ export const projects: Projects = [
     image: {
       src: cityPlumbing,
       alt: "City Plumbing website",
-      width: 220,
-      height: 130
+      width: 280,
+      height: 150
     },
     description:
       "I am currently a Software Engineer at City Plumbing, part of the Highbourne Group, where I contribute to the Platform Team developing security reporting tools and championing software development best practices. Previously, I worked on a Product Development Team, building a Next.js-based digital till application for retail stores to enhance sales opportunities and streamline the checkout experience.",
@@ -187,6 +188,7 @@ export const projects: Projects = [
     ]
   },
   {
+    tag: "bmj",
     title: {
       heading: "BMJ Learning",
       link: "https://new-learning.bmj.com"
@@ -218,6 +220,7 @@ export const projects: Projects = [
     ]
   },
   {
+    tag: "elizabethCoventry",
     title: {
       heading: "Elizabeth Coventry",
       link: "https://elizabethcoventry.com"
@@ -244,6 +247,7 @@ export const projects: Projects = [
     ]
   },
   {
+    tag: "aroundBritain",
     title: {
       heading: "Around Britain",
       link: "https://aroundbritain.uk"

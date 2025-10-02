@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LINKEDIN_URL, TESTIMONIALS_LINK, CV_LINK, BIO_LINK } from "@/lib/constants";
+import { LINKEDIN_URL, TESTIMONIALS_LINK } from "@/lib/constants";
 import mugshot from "@/assets/images/mugshot.png";
 import styles from "@/css/AboutMe.module.css";
 
@@ -24,12 +24,6 @@ export default function AboutMe() {
         <li>
           <Link href={TESTIMONIALS_LINK}>Recommendations</Link>
         </li>
-        {/* <li>
-          <Link href={CV_LINK}>Curriculum Vitae</Link>
-        </li> */}
-        {/* <li>
-          <Link href={BIO_LINK}>Bio</Link>
-        </li> */}
       </ul>
     </section>
   );
