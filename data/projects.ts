@@ -25,7 +25,7 @@ import awsSesImg from "@/assets/images/toolkit/ses.svg";
 import postgresImg from "@/assets/images/toolkit/postgres.png";
 import reduxImg from "@/assets/images/toolkit/redux.svg";
 import awsInspector from "@/assets/images/toolkit/inspector.svg";
-import graphQL from "@/assets/images/toolkit/graphQl.svg";
+import graphQL from "@/assets/images/toolkit/graphQL.svg";
 import playwright from "@/assets/images/toolkit/playwright.svg";
 import awsS3 from "@/assets/images/toolkit/s3.svg";
 import terraform from "@/assets/images/toolkit/terraform.svg";
