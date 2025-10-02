@@ -1,5 +1,5 @@
 import Logo from "@/components/BaseLogo";
-import styles from "@/css/Details.module.css";
+import styles from "@/css/MyDetails.module.css";
 
 export default function MyDetails() {
   return (

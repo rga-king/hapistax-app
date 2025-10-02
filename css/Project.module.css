@@ -1,57 +1,125 @@
-.project {
+.container {
   display: flex;
   flex-direction: column;
-  border-top: var(--border-dash);
-  padding-top: 30px;
-  margin-top: 10px;
+  width: 100%;
+  margin: 50px;
+  padding: 28px 50px;
+  background-color: var(--colour-white);
+  border-radius: 8px;
 }
 
-.image {
-  display: none;
-  height: 300px;
-  box-shadow: 2px 2px 8px -4px rgba(94, 93, 93, 0.87);
+.body {
+  display: flex;
+  gap: 150px;
+  overflow-y: auto;
 }
 
-.image:hover {
-  opacity: var(--hover-opacity);
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.image img {
-  object-fit: cover;
-  margin: auto;
+.header h2 {
+  font: 600 2.6rem var(--font-lateef);
+  line-height: 2rem;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-width: 0;
+  background-color: var(--colour-white);
+  font: 300 1.2rem var(--font-inter);
+  text-transform: uppercase;
+  padding: 10px;
+  color: var(--colour-grey-600);
+}
+
+.header button:hover {
+  background-color: var(--colour-grey-100);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .description {
-  margin: 0 0px;
-}
-
-.description h3 {
-  margin: 0;
-  padding: 0;
-  font: 600 2.6rem var(--font-lateef);
-  line-height: 1.4rem;
+  margin: 0 0;
 }
 
 .description p {
+  margin-top: 0;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 2rem;
 }
 
-.toolkit {
+.sidebar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-@media only screen and (min-width: 1025px) {
-  .project {
-    display: grid;
-    grid-template-columns: 350px 1fr 190px;
-    grid-gap: 5em;
+.projectImage {
+  display: flex;
+  width: 350px;
+  height: 300px;
+  box-shadow: 2px 2px 8px -4px rgba(94, 93, 93, 0.87);
+}
+
+.projectImage img {
+  object-fit: cover;
+  margin: auto;
+}
+
+.projectImage:hover {
+  opacity: var(--hover-opacity);
+}
+
+.recommendations {
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.recommendationsHeading {
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.recommendationsLink {
+  display: block;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 20px;
   }
 
-  .image {
-    display: flex;
+  .body {
+    gap: 100px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .projectImage {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 28px 20px;
+  }
+}
+
+

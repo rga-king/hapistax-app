@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import { Inter } from "next/font/google";
 import "@/css/globals.css";
-import { lateef, lexendPeta } from "@/lib/fonts";
-
-const inter = Inter({ subsets: ["latin"] });
+import { lateef, lexendPeta, inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "HAPiSTAX",
@@ -23,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${lexendPeta.variable} ${lateef.variable}`}>
+    <html lang="en" className={`${lexendPeta.variable} ${lateef.variable} ${inter.variable}`}>
       <body className={inter.className}>
         {children}
         <Footer />

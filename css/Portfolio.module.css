@@ -18,3 +18,17 @@
   font-size: 2rem;
   color: var(--colour-grey-900);
 }
+
+.portfolioEntries {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10%;
+  row-gap: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .portfolioEntries {
+    display: flex;
+    flex-direction: column;
+  }
+}

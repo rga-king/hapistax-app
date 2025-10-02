@@ -1,0 +1,24 @@
+h3.name,
+.position {
+  font: 600 2rem var(--font-lateef);
+  line-height: 1.8rem;
+  color: var(--colour-grey-900);
+  margin-bottom: 6px;
+}
+
+.recommendationHeading h3 {
+  display: inline-block;
+}
+
+.recommendationHeading h4 {
+  color: var(--colour-grey-700);
+}
+
+.position {
+  display: flex;
+  align-items: flex-start;
+}
+
+.position img {
+  margin-right: 6px;
+}
