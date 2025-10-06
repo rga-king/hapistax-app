@@ -11,7 +11,15 @@ export type Tool = {
 export type ProjectTitle = {
   heading: string;
   link: string;
+  subtitle?: string;
+  timeline?: string
 };
+
+// Type for the project descriptions
+type ProjectDescription = {
+  short: string,
+  full: string
+}
 
 // Type for a project image
 export type ProjectImage = {
@@ -21,6 +29,25 @@ export type ProjectImage = {
   height?: number;
 };
 
+export enum Category {
+  Employment = "EMPLOYMENT",
+  PrivateClient = "PRIVATE CLIENT",
+  PersonalProject = "PERSONAL PROJECT"
+}
+
+// Type for a single project
+export type Project = {
+  tag: String,
+  title: ProjectTitle;
+  image: ProjectImage;
+  category: Category;
+  description: ProjectDescription;
+  toolkit?: Tool[]; // Optional toolkit
+}
+
+// Type for the array of projects
+export type Projects = Project[];
+
 // Type for a recommendation entry
 export type Recommendation = {
   tag: String,
@@ -29,15 +56,3 @@ export type Recommendation = {
   link: String,
   text: String;
 }
-
-// Type for a single project
-export type Project = {
-  tag: String,
-  title: ProjectTitle;
-  image: ProjectImage;
-  description: string;
-  toolkit?: Tool[]; // Optional toolkit
-}
-
-// Type for the array of projects
-export type Projects = Project[];

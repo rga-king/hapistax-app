@@ -22,8 +22,19 @@
 }
 
 .header h2 {
-  font: 600 2.6rem var(--font-lateef);
+  font: 600 2.8rem var(--font-lateef);
   line-height: 2rem;
+}
+
+.header h3 {
+  font: 400 2.4rem var(--font-lateef);
+  line-height: 2rem;
+  margin-top: 18px;
+}
+
+.timeline {
+  font: 200 1.1rem var(--font-inter);
+  text-transform: uppercase;
 }
 
 .header button {
@@ -31,29 +42,58 @@
   align-items: center;
   gap: 6px;
   border-width: 0;
-  background-color: var(--colour-white);
-  font: 300 1.2rem var(--font-inter);
+  background-color: var(--colour-grey-100);
+  border-radius: 5px;
+  font: 300 1rem var(--font-inter);
   text-transform: uppercase;
   padding: 10px;
   color: var(--colour-grey-600);
 }
 
 .header button:hover {
-  background-color: var(--colour-grey-100);
-  border-radius: 5px;
+  background-color: var(--colour-grey-200);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
 .description {
-  margin: 0 0;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.description h5 {
+  margin: 0;
+  font: 200 1.2rem var(--font-inter);
+  text-transform: uppercase;
 }
 
 .description p {
   margin-top: 0;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 2rem;
+}
+
+.description a {
+  text-decoration-style: dotted;
+  color: var(--colour-blue);
+  text-decoration-thickness: 2.5px;
+}
+
+.description a:hover {
+  text-decoration-color: var(--colour-hotpink);
+}
+
+.description ul {
+  padding-left: 16px;
+  list-style: circle;
+}
+
+.description li {
+  margin-top: 18px;
+}
+
+.description strong {
+  font-weight: 600;
 }
 
 .sidebar {

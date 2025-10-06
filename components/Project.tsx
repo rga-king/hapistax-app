@@ -21,13 +21,16 @@ export default function Project ({ project, onClickClose }: ProjectProps) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>{heading}</h2>
-        <button type="button" onClick={onClickClose}>Close <Image src={closeIcon} width="32" height="32" alt="Close project details"/></button>
+        <div>
+          <h2>{heading}</h2>
+          <h3>{project.title.subtitle}, <span className={styles.timeline}>{project.title.timeline}</span></h3>
+        </div>
+        <button type="button" onClick={onClickClose}>Close <Image src={closeIcon} width="22" height="22" alt="Close project details"/></button>
       </div>
       <div className={styles.body}>
         <div className={styles.description}>
-          <p>{project?.description}</p>
-          <Toolkit toolkit={project?.toolkit} />
+          <div dangerouslySetInnerHTML={{ __html: project.description.full}}></div>
+          <Toolkit toolkit={project.toolkit} />
         </div>
         <div className={styles.sidebar}>
           <Link href={link} className={styles.projectImage} target="_blank">
