@@ -1,12 +1,10 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import BaseModal from "@/components/BaseModal";
 import ProjectDetails from "@/components/Project";
 import PortfolioEntryDetailsButton from "@/components/PortfolioEntryDetailsButton";
 import { Project } from "@/lib/types";
 import styles from "@/css/PortfolioEntryGrid.module.css";
-import siteStyles from "@/css/Site.module.css";
 
 type PortfolioEntryGrid = {
   project: Project
@@ -30,12 +28,8 @@ export default function PortfolioEntryGrid({
     <>
       <div className={styles.project}>
         <div className={styles.description}>
-          <h3>
-            <Link href={link} className={siteStyles.headingLink} target="_blank">
-              {heading}
-            </Link>
-          </h3>
-          <p>{project.description}</p>
+          <h3>{heading}</h3>
+          <p>{project.description.short}</p>
         </div>
         <PortfolioEntryDetailsButton onClick={handleShowProject} />
       </div>

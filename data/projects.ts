@@ -1,165 +1,19 @@
-import { Tool } from "@/lib/types";
-import { Projects } from "@/lib/types";
+import { Projects, Category } from "@/lib/types";
+import { toolkit } from "@/data/toolkit";
 
 import cityPlumbing from "@/assets/images/city-plumbing.svg";
 import bmjLearning from "@/assets/images/bmj-logo.svg";
 import ecoventry from "@/assets/images/late-autumn-grapevine.jpeg";
 import aroundBritain from "@/assets/images/around-britain.png";
-import javaScriptImg from "@/assets/images/toolkit/javascript.svg";
-import typeScriptImg from "@/assets/images/toolkit/typescript.svg";
-import reactImg from "@/assets/images/toolkit/reactjs.svg";
-import sassImg from "@/assets/images/toolkit/sass.svg";
-import css3Img from "@/assets/images/toolkit/css3.svg";
-import cypressImg from "@/assets/images/toolkit/cypress.svg";
-import dockerImg from "@/assets/images/toolkit/docker.svg";
-import expressjsImg from "@/assets/images/toolkit/expressjs.svg";
-import jestImg from "@/assets/images/toolkit/jest.svg";
-import nextjsImg from "@/assets/images/toolkit/next-js.png";
-import nodejsImg from "@/assets/images/toolkit/nodejs.svg";
-import springbootImg from "@/assets/images/toolkit/spring.svg";
-import dynamoDBImg from "@/assets/images/toolkit/dynamodb.svg";
-import awsLambdaImg from "@/assets/images/toolkit/lambda.svg";
-import awsAmplifyImg from "@/assets/images/toolkit/amplify.svg";
-import awsApiGatewayImg from "@/assets/images/toolkit/apigateway.svg";
-import awsSesImg from "@/assets/images/toolkit/ses.svg";
-import postgresImg from "@/assets/images/toolkit/postgres.png";
-import reduxImg from "@/assets/images/toolkit/redux.svg";
-import awsInspector from "@/assets/images/toolkit/inspector.svg";
-import graphQL from "@/assets/images/toolkit/graphQL.svg";
-import playwright from "@/assets/images/toolkit/playwright.svg";
-import awsS3 from "@/assets/images/toolkit/s3.svg";
-import terraform from "@/assets/images/toolkit/terraform.svg";
-
-
-const toolkit: Record<string, Tool> = {
-  javascript: {
-    image: javaScriptImg,
-    alt: "JavaScript",
-    href: "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript"
-  },
-  typescript: {
-    image: typeScriptImg,
-    alt: "TypeScript",
-    href: "https://www.typescriptlang.org/"
-  },
-  react: {
-    image: reactImg,
-    alt: "React",
-    href: "https://react.dev/"
-  },
-  redux: {
-    image: reduxImg,
-    alt: "Redux Toolkit",
-    href: "https://redux-toolkit.js.org/"
-  },
-  sass: {
-    image: sassImg,
-    alt: "Sass",
-    href: "https://sass-lang.com/"
-  },
-  css: {
-    image: css3Img,
-    alt: "CSS3",
-    href: "https://www.w3.org/Style/CSS/Overview.en.html"
-  },
-  cypress: {
-    image: cypressImg,
-    alt: "Cypress",
-    href: "https://www.cypress.io/"
-  },
-  docker: {
-    image: dockerImg,
-    alt: "Docker",
-    href: "https://www.docker.com/"
-  },
-  expressjs: {
-    image: expressjsImg,
-    alt: "Express.js",
-    href: "https://expressjs.com/"
-  },
-  jest: {
-    image: jestImg,
-    alt: "Jest",
-    href: "https://jestjs.io/"
-  },
-  nextjs: {
-    image: nextjsImg,
-    alt: "Next.js",
-    href: "https://nextjs.org/"
-  },
-  nodejs: {
-    image: nodejsImg,
-    alt: "Node.js",
-    href: "https://nodejs.org/"
-  },
-  springboot: {
-    image: springbootImg,
-    alt: "Spring Boot",
-    href: "https://spring.io/projects/spring-boot"
-  },
-  dynamoDB: {
-    image: dynamoDBImg,
-    alt: "DynamoDB",
-    href: "https://aws.amazon.com/dynamodb/?did=ap_card&trk=ap_card"
-  },
-  awsLambda: {
-    image: awsLambdaImg,
-    alt: "AWS Lambda",
-    href: "https://aws.amazon.com/lambda/?nc2=h_ql_prod_fs_lbd"
-  },
-  awsAmplify: {
-    image: awsAmplifyImg,
-    alt: "AWS Amplify",
-    href: "https://aws.amazon.com/amplify/?did=ap_card&trk=ap_card"
-  },
-  awsApiGateway: {
-    image: awsApiGatewayImg,
-    alt: "AWS API Gateway",
-    href: "https://aws.amazon.com/api-gateway/?did=ap_card&trk=ap_card"
-  },
-  awsSes: {
-    image: awsSesImg,
-    alt: "AWS SES",
-    href: "https://aws.amazon.com/ses/?did=ap_card&trk=ap_card"
-  },
-  postgres: {
-    image: postgresImg,
-    alt: "PostgreSQL",
-    href: "https://www.postgresql.org/"
-  },
-  awsInspector: {
-    image: awsInspector,
-    alt: "Amazon Inspector",
-    href: "https://aws.amazon.com/inspector/"
-  },
-  graphQL: {
-    image: graphQL,
-    alt: "GraphQL",
-    href: "https://graphql.org/"
-  },
-  awsS3: {
-    image: awsS3,
-    alt: "Amazon Simple Storage Service",
-    href: "https://aws.amazon.com/s3/"
-  },
-  playwright: {
-    image: playwright,
-    alt: "Playwright",
-    href: "https://playwright.dev/"
-  },
-  terraform: {
-    image: terraform,
-    alt: "Terraform",
-    href: "https://developer.hashicorp.com/terraform"
-  }
-};
 
 export const projects: Projects = [
   {
     tag: "cps",
     title: {
       heading: "City Plumbing",
-      link: "https://www.highbournegroup.co.uk/"
+      link: "https://www.highbournegroup.co.uk/",
+      subtitle: "Software Engineer",
+      timeline: "Oct 2024 - present"
     },
     image: {
       src: cityPlumbing,
@@ -167,8 +21,13 @@ export const projects: Projects = [
       width: 280,
       height: 150
     },
-    description:
-      "I am currently a Software Engineer at City Plumbing, part of the Highbourne Group, where I contribute to the Platform Team developing security reporting tools and championing software development best practices. Previously, I worked on a Product Development Team, building a Next.js-based digital till application for retail stores to enhance sales opportunities and streamline the checkout experience.",
+    category: Category.Employment,
+    description: {
+      short: 
+        "Employed as a full-stack software engineer. Key projects: development of flagship Digital Till sales tool; design of automated security reporting tools; documentation and promotion of software development best practices.",
+      full: 
+        "<p>Member of a product development team creating a flagship digital till Next.js application for retail stores to increase sales opportunities; part of the platform team developing security reporting software and promoting software development best practices.</p><h5>Key projects:</h5><ul><li><strong>Product Feature Development</strong>: Implemented a new stock allocation feature in React for a digital till POS application, including unit and integration tests to ensure reliability and performance.</li><li><strong>Platform Team Initiatives</strong>: Developed security reporting software using Node.js to identify CVEs across all company AWS accounts; automated deployment using Infrastructure as Code principles with Terraform, S3, and AWS Lambda.</li><li><strong>Best Practices Development</strong>: Authored prototypes for building scalable and maintainable Spring Boot applications; completed an analysis and documentation of all public-facing and internal front-end applications to streamline future development.</li></ul>"
+    },
     toolkit: [
       toolkit.javascript,
       toolkit.typescript,
@@ -191,7 +50,9 @@ export const projects: Projects = [
     tag: "bmj",
     title: {
       heading: "BMJ Learning",
-      link: "https://new-learning.bmj.com"
+      link: "https://new-learning.bmj.com",
+      subtitle: "Software Developer",
+      timeline: "May 2022 - Oct 2024"
     },
     image: {
       src: bmjLearning,
@@ -199,8 +60,13 @@ export const projects: Projects = [
       width: 220,
       height: 130
     },
-    description:
-      "Prior to City Plumbing, I was a full-stack developer at BMJ Learning, where my background in education proved a perfect fit. I worked on a React frontend supported by a backend of REST APIs built with Node.js and Spring Boot, all deployed on AWS microservice platforms. Our agile development practices enabled rapid feature development and were reinforced by comprehensive testing suites, including Cypress, Jest, and Jasmine, to ensure robust maintenance and reliability.",
+    category: Category.Employment,
+    description: {
+      short: 
+        "Employed as a full-stack developer on the BMJ Learning product. Key projects: design of new authentication system; implementation of new site search feature; migration of legacy code and database to modern solutions.",
+      full: 
+        "<p>Member of a full-stack team developing all aspects of the <a href='https://new-learning.bmj.com' class='${siteStyles.link}' target='_blank' rel='noopener noreferrer'>BMJ Learning web application</a>; lead front-end developer from October 2023.</p><h5>Key projects:</h5><ul><li><strong>New Search Feature Implementation</strong>: Led the front-end development of a new search functionality that significantly improved user experience by reducing search times by 40%. This involved integrating React front-end components with AWS microservices.</li><li><strong>Authentication System Overhaul</strong>: Worked on the replacement of an outdated authentication system with a modern OAuth2-based solution, enhancing security and simplifying user management.</li><li><strong>API devlopment</strong>: Responsible for creating and maintaining APIs implemented in Node.js and Java (Spring Boot), ensuring their efficient performance and seamless integration with the front-end application.</li></ul>"
+    },
     toolkit: [
       toolkit.javascript,
       toolkit.typescript,
@@ -223,14 +89,21 @@ export const projects: Projects = [
     tag: "elizabethCoventry",
     title: {
       heading: "Elizabeth Coventry",
-      link: "https://elizabethcoventry.com"
+      link: "https://elizabethcoventry.com",
+      subtitle: "Website and CMS",
+      timeline: "2023 - present"
     },
     image: {
       src: ecoventry,
       alt: "Elizabeth Coventry website"
     },
-    description:
-      "I developed this website for a client looking to grow her business through products based on her botanical artwork. The website primarily functions as a brochure to support offline sales but is built on a scalable framework ready for e-commerce. Constructed with Next.js and TypeScript, the site uses server components to connect directly to a backend DynamoDB for seamless data fetching. Additionally, it includes a custom CMS, also built with Next.js, enabling straightforward content management and updates.",
+    category: Category.PrivateClient,
+    description: {
+      short: 
+        "Development of a business website and bespoke content management system for a private client.",
+      full: 
+        "I developed this website for a client looking to grow her business through products based on her botanical artwork. The website primarily functions as a brochure to support offline sales but is built on a scalable framework ready for e-commerce. Constructed with Next.js and TypeScript, the site uses server components to connect directly to a backend DynamoDB for seamless data fetching. Additionally, it includes a custom CMS, also built with Next.js, enabling straightforward content management and updates."
+    },
     toolkit: [
       toolkit.javascript,
       toolkit.typescript,
@@ -249,15 +122,22 @@ export const projects: Projects = [
   {
     tag: "aroundBritain",
     title: {
-      heading: "Around Britain",
-      link: "https://aroundbritain.uk"
+      heading: "Around Britain & Through Britain",
+      link: "https://aroundbritain.uk",
+      subtitle: "Website and CMS",
+      timeline: "2024 - present"
     },
     image: {
       src: aroundBritain,
       alt: "Around Britain website"
     },
-    description:
-      "This website documents my client's journey around the coast of Great Britain, started in 1999 and nearing completion this year 👏. Due to the extensive text content, I designed a clear, user-friendly structure. The client wanted a custom solution rather than standard blogging options, so I developed a unique design with a bespoke CMS, both built using Next.js and deployed via AWS Amplify. The data is managed with AWS DynamoDB for its flexibility and high performance.",
+    category: Category.PrivateClient,
+    description: {
+      short:
+        "Bespoke blogging website and content management system for a private client.",
+      full:
+        "This website documents my client's journeys around Great Britain, starting in 1999 and still going strong 👏. Due to the extensive text content, I designed a clear, user-friendly structure. The client wanted a custom solution rather than standard blogging options, so I developed a unique design with a bespoke CMS, both built using Next.js and deployed via AWS Amplify. The data is managed with AWS DynamoDB for its flexibility and high performance."
+    },
     toolkit: [
       toolkit.javascript,
       toolkit.typescript,

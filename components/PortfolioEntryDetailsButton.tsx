@@ -7,7 +7,7 @@ type PortfolioEntryDetailsButtonProps = {
 export default function PortfolioEntryDetailsButton ({ onClick }: PortfolioEntryDetailsButtonProps) {
   return (
     <div className={styles.portfolioButton}>
-      <button type="button" onClick={onClick}>View more details</button>
+      <button type="button" onClick={onClick}>Find out more</button>
     </div>
     
   )
