@@ -97,8 +97,9 @@
 }
 
 .sidebar {
-  display: flex;
+  display: block;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .projectImage {
