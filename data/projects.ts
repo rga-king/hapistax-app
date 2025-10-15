@@ -8,6 +8,7 @@ import aroundBritain from "@/assets/images/around-britain.png";
 
 export const projects: Projects = [
   {
+    id: "cps",
     tag: "cps",
     title: {
       heading: "City Plumbing",
@@ -47,6 +48,7 @@ export const projects: Projects = [
     ]
   },
   {
+    id: "bmj",
     tag: "bmj",
     title: {
       heading: "BMJ Learning",
@@ -86,6 +88,7 @@ export const projects: Projects = [
     ]
   },
   {
+    id: "elizabethCoventry",
     tag: "elizabethCoventry",
     title: {
       heading: "Elizabeth Coventry",
@@ -120,6 +123,7 @@ export const projects: Projects = [
     ]
   },
   {
+    id: "aroundBritain",
     tag: "aroundBritain",
     title: {
       heading: "Around Britain & Through Britain",

@@ -15,7 +15,9 @@ export default function Portfolio() {
         {projects?.map((project, index) => (
           <PortfolioEntryGrid
             key={`project_${index}`}
-            project={project}
+            id={project.id}
+            heading={project.title?.heading}
+            description={project.description?.short}
           />
         ))}
       </div>

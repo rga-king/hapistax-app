@@ -1,9 +1,10 @@
-.portfolioButton button {
+.portfolioLink {
+  display: inline-flex;
   border-radius: 5px;
   background-color: var(--colour-grey-100);
   text-transform: uppercase;
   border: none;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 1rem 2rem;
   margin: 0;
   text-decoration: none;
@@ -19,15 +20,15 @@
   -moz-appearance: none;
 }
 
-.portfolioButton button:hover,
-.portfolioButton button:focus {
+.portfolioLink:hover,
+.portfolioLink:focus {
   background-color: var(--colour-grey-200);
 }
 
-.portfolioButton button:focus {
+.portfolioLink:focus {
   outline: 1px solid var(--colour-grey-300);
 }
 
-.portfolioButton button:active {
+.portfolioLink:active {
   transform: scale(0.99);
 }

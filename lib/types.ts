@@ -37,7 +37,8 @@ export enum Category {
 
 // Type for a single project
 export type Project = {
-  tag: String,
+  id: string,
+  tag: string,
   title: ProjectTitle;
   image: ProjectImage;
   category: Category;
@@ -50,9 +51,10 @@ export type Projects = Project[];
 
 // Type for a recommendation entry
 export type Recommendation = {
-  tag: String,
-  name: String,
-  position: String,
-  link: String,
-  text: String;
+  tag: string,
+  name: string,
+  position: string,
+  link: string,
+  text: string;
 }
+  
