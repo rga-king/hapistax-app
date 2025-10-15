@@ -1,19 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
+import Mugshot from "@/components/Mugshot";
 import { LINKEDIN_URL, TESTIMONIALS_LINK } from "@/lib/constants";
-import mugshot from "@/assets/images/mugshot.png";
 import styles from "@/css/AboutMe.module.css";
 
 export default function AboutMe() {
   return (
     <section className={styles.container}>
-      <Image
-        className={styles.mugshot}
-        src={mugshot}
-        width="122"
-        height="122"
-        alt="Robin King"
-      />
+      <div className={styles.mugshot}>
+        <Mugshot />
+      </div>
       <ul className={styles.aboutMeList}>
         <li>
           {" "}

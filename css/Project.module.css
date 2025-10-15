@@ -1,16 +1,11 @@
 .container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 50px;
-  padding: 28px 50px;
-  background-color: var(--colour-white);
-  border-radius: 8px;
+  gap: 150px;
 }
 
-.body {
+.mainContent {
   display: flex;
-  gap: 150px;
+  flex-direction: column;
   overflow-y: auto;
 }
 
@@ -99,7 +94,6 @@
 .sidebar {
   display: block;
   flex-direction: column;
-  margin-right: 20px;
 }
 
 .projectImage {
@@ -137,30 +131,18 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .container {
-    margin: 20px;
-  }
-
-  .body {
-    gap: 100px;
+  .mainContent {
+    gap: 0px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .body {
+  .container {
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
   }
 
   .projectImage {
     display: none;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .container {
-    padding: 28px 20px;
-  }
-}
-
-

@@ -12,24 +12,27 @@ type ProjectProps = {
 }
 
 export default function Project ({ project }: ProjectProps) {
-  const { heading, link } = project.title;
+  const { heading, link, subtitle, timeline } = project.title;
   const { src, alt, width = 350, height = 300 } = project.image;
   const recommendations = testimonials.filter((testimonial) => project.tag === testimonial.tag);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <div>
-          <h2>{heading}</h2>
-          <h3>{project.title.subtitle}, <span className={styles.timeline}>{project.title.timeline}</span></h3>
+    <div className={`${styles.container} ${siteStyles.row}`}>
+      <div className={styles.mainContent}>
+        <div className={styles.header}>
+          <div>
+            <h2>{heading}</h2>
+            { subtitle && timeline && (
+              <h3>{subtitle}, <span className={styles.timeline}>{timeline}</span></h3>
+            )}
+          </div>
         </div>
-      </div>
-      <div className={styles.body}>
         <div className={styles.description}>
           <div dangerouslySetInnerHTML={{ __html: project.description.full}}></div>
           <Toolkit toolkit={project.toolkit} />
         </div>
-        <div className={styles.sidebar}>
+      </div>
+      <div className={styles.sidebar}>
           <Link href={link} className={styles.projectImage} target="_blank">
             <Image src={src} width={width} height={height} alt={alt} priority={true} />
           </Link>
@@ -49,7 +52,6 @@ export default function Project ({ project }: ProjectProps) {
             </div>
           )}
         </div>
-      </div>
     </div>
   );
 }

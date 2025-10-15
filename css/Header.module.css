@@ -1,6 +1,10 @@
 .header {
+  display: flex;
+  place-items: center;
+  gap: 10px;
   border-bottom: var(--border-dash);
   padding: 20px 0;
+  margin-bottom: 50px;
 }
 
 .header a {
@@ -9,4 +13,12 @@
 
 .header a:hover {
   color: var(--colour-hotpink);
+}
+
+.mugshot img {
+  object-fit: cover;
+  border-radius: 100px;
+  border: 4px solid var(--colour-grey-100);
+  width: 48px;
+  height: 48px;
 }
