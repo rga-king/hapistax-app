@@ -1,5 +1,6 @@
 .footer {
   border-top: var(--border-dash);
+  margin-top: 50px;
   font: 700 2rem var(--font-lateef);
   color: var(--colour-grey-700);
 }
