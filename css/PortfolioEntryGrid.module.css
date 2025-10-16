@@ -1,9 +1,10 @@
 .project {
   display: flex;
   flex-direction: column;
-  border-top: var(--border-dash);
   padding-top: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: var(--border-dash);
 }
 
 .description {
