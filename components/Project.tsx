@@ -20,12 +20,10 @@ export default function Project ({ project }: ProjectProps) {
     <div className={`${styles.container} ${siteStyles.row}`}>
       <div className={styles.mainContent}>
         <div className={styles.header}>
-          <div>
-            <h2>{heading}</h2>
-            { subtitle && timeline && (
-              <h3>{subtitle}, <span className={styles.timeline}>{timeline}</span></h3>
-            )}
-          </div>
+          <h2>{heading}</h2>
+          { subtitle && timeline && (
+            <h3>{subtitle}, <span className={styles.timeline}>{timeline}</span></h3>
+          )}
         </div>
         <div className={styles.description}>
           <div dangerouslySetInnerHTML={{ __html: project.description.full}}></div>

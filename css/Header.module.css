@@ -1,7 +1,7 @@
 .header {
   display: flex;
   place-items: center;
-  gap: 10px;
+  justify-content: space-between;
   border-bottom: var(--border-dash);
   padding: 20px 0;
   margin-bottom: 50px;
