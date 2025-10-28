@@ -5,6 +5,7 @@ import cityPlumbing from "@/assets/images/city-plumbing.svg";
 import bmjLearning from "@/assets/images/bmj-logo.svg";
 import ecoventry from "@/assets/images/late-autumn-grapevine.jpeg";
 import aroundBritain from "@/assets/images/around-britain.png";
+import react from "@/assets/images/react.svg";
 
 export const projects: Projects = [
   {
@@ -105,7 +106,7 @@ export const projects: Projects = [
       short: 
         "Development of a business website and bespoke content management system for a private client.",
       full: 
-        "I developed this website for a client looking to grow her business through products based on her botanical artwork. The website primarily functions as a brochure to support offline sales but is built on a scalable framework ready for e-commerce. Constructed with Next.js and TypeScript, the site uses server components to connect directly to a backend DynamoDB for seamless data fetching. Additionally, it includes a custom CMS, also built with Next.js, enabling straightforward content management and updates."
+        "<p>I developed this website for a client looking to grow her business through products based on her botanical artwork. The website primarily functions as a brochure to support offline sales but is built on a scalable framework ready for e-commerce. Constructed with Next.js and TypeScript, the site uses server components to connect directly to a backend DynamoDB for seamless data fetching. Additionally, it includes a custom CMS, also built with Next.js, enabling straightforward content management and updates.</p>"
     },
     toolkit: [
       toolkit.javascript,
@@ -119,7 +120,8 @@ export const projects: Projects = [
       toolkit.dynamoDB,
       toolkit.awsAmplify,
       toolkit.awsLambda,
-      toolkit.awsSes
+      toolkit.awsSes,
+      toolkit.zustand
     ]
   },
   {
@@ -140,7 +142,7 @@ export const projects: Projects = [
       short:
         "Bespoke blogging website and content management system for a private client.",
       full:
-        "This website documents my client's journeys around Great Britain, starting in 1999 and still going strong 👏. Due to the extensive text content, I designed a clear, user-friendly structure. The client wanted a custom solution rather than standard blogging options, so I developed a unique design with a bespoke CMS, both built using Next.js and deployed via AWS Amplify. The data is managed with AWS DynamoDB for its flexibility and high performance."
+        "<p>This website documents my client's journeys around Great Britain, starting in 1999 and still going strong 👏. Due to the extensive text content, I designed a clear, user-friendly structure. The client wanted a custom solution rather than standard blogging options, so I developed a unique design with a bespoke CMS, both built using Next.js and deployed via AWS Amplify. The data is managed with AWS DynamoDB for its flexibility and high performance.</p>"
     },
     toolkit: [
       toolkit.javascript,
@@ -154,7 +156,39 @@ export const projects: Projects = [
       toolkit.dynamoDB,
       toolkit.awsAmplify,
       toolkit.awsLambda,
-      toolkit.awsSes
+      toolkit.awsSes,
+      toolkit.zustand
+    ]
+  },
+  {
+    id: "reactSpaProjects",
+    tag: "react",
+    title: {
+      heading: "React SPA projects",
+      link: "https://github.com/rga-king?tab=repositories",
+      subtitle: "",
+      timeline: "2025"
+    },
+    image: {
+      src: react,
+      alt: "React projects",
+      width: 256,
+      height: 250
+    },
+    category: Category.PersonalProject,
+    description: {
+      short:
+        "A collection of React SPAs put together for professional development, but with a practical purpose.",
+      full:
+        "<p>I initally started this set of projects with the counter app because it seemed the quickest and easiest way to try out Vite (and it's always useful to have a counter app to call on \\o/).</p><p>From there I developed two more apps, <code>social-climber-app</code> and <code>good2go-app</code>.</p><p><code>social-climber-app</code> is a word analytics tool that helps a user create a social media post that could be used across multiple platforms. It provides real-time analytics on the word count set against the word limit for each platform. I have a number of ideas on how to take this forward and give it more real-world applications, particularly partnering it up with AI to provide support on the post content itself.</p><p><code>good2go-app</code> is an alternative take on the todo list app. It enables the user to create a list of items they want to pack for a trip, and keep track of what they have packed. It makes use of Zustand's state management and persistence features to manage the user's data.</p>"
+    },
+    toolkit: [
+      toolkit.javascript,
+      toolkit.typescript,
+      toolkit.react,
+      toolkit.vite,
+      toolkit.css,
+      toolkit.zustand
     ]
   }
 ];

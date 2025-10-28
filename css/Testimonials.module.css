@@ -1,3 +1,9 @@
+.recommendationsHeading {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .testimonial h2,
 .position {
   font: 600 2rem var(--font-lateef);

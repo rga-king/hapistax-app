@@ -24,6 +24,8 @@ import graphQL from "@/assets/images/toolkit/graphQL.svg";
 import playwright from "@/assets/images/toolkit/playwright.svg";
 import awsS3 from "@/assets/images/toolkit/s3.svg";
 import terraform from "@/assets/images/toolkit/terraform.svg";
+import vite from "@/assets/images/toolkit/vitejs.svg";
+import zustand from "@/assets/images/toolkit/zustand.svg";
 
 
 export const toolkit: Record<string, Tool> = {
@@ -146,5 +148,15 @@ export const toolkit: Record<string, Tool> = {
     image: terraform,
     alt: "Terraform",
     href: "https://developer.hashicorp.com/terraform"
+  },
+  vite: {
+    image: vite,
+    alt: "Vitejs",
+    href: "https://vite.dev/"
+  },
+  zustand: {
+    image: zustand,
+    alt: "Zustand",
+    href: "https://zustand.docs.pmnd.rs/getting-started/introduction"
   }
 };

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "@/components/PageHeader";
 import { testimonials } from "@/data/testimonials";
 import badge from "@/assets/icons/badge.svg";
+import recommend from "@/assets/icons/recommend.svg";
 import siteStyles from "@/css/Site.module.css";
 import styles from "@/css/Testimonials.module.css";
 
@@ -11,7 +12,10 @@ export default function Testimonials() {
     <>
       <Header />
       <div className={siteStyles.row}>
-        <h1 className={siteStyles.heading}>Recommendations</h1>
+        <div className={styles.recommendationsHeading}>
+          <Image src={recommend} width={35} height={35} alt="thumbs up" />
+          <h1 className={siteStyles.heading}>Recommendations</h1>
+        </div>
         {testimonials?.map((testimonial, index) => (
           <div key={`_${index}`} className={styles.testimonial}>
             <h2>
