@@ -17,7 +17,7 @@ type RecommendationNameProps = {
 
 function RecommendationName({ link, name }: RecommendationNameProps) {
   if (!link) return <h3 className={styles.name}>{name}</h3>;
-  return <h3 className={styles.name}><Link className={siteStyles.headingLink} href={link} target="_blank">{name}</Link></h3>;
+  return <h3 className={styles.name}><Link className="headingLink" href={link} target="_blank">{name}</Link></h3>;
 }
 
 export default function RecommendationHeading({

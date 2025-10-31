@@ -1,4 +1,6 @@
-export const testimonials = [
+import { type Recommendation } from "@/lib/types";
+
+export const recommendations: Recommendation[] = [
     {
     tag: "cps",
     name: "Nigel Fawcett",

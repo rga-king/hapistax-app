@@ -39,17 +39,6 @@ ul.aboutMeList li:before {
   height: 20px;
 }
 
-ul.aboutMeList a {
-  text-decoration: none;
-  color: var(--colour--grey-700);
-  &:hover {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: var(--colour-hotpink);
-    color: var(--colour-grey-500);
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .container {
     flex-direction: column;

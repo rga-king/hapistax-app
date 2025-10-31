@@ -4,28 +4,12 @@
   gap: 4px;
 }
 
-.testimonial h2,
-.position {
-  font: 600 2rem var(--font-lateef);
-  line-height: 1.8rem;
-  color: var(--colour-grey-900);
-  margin-bottom: 6px;
-}
-
-.testimonial h2 {
-  display: inline-block;
-}
-
-.testimonial p {
+.recommendation p {
   font-size: 1.1rem;
   line-height: 1.8rem;
 }
 
-.testimonial h3 {
-  color: var(--colour-grey-700);
-}
-
-.testimonial blockquote {
+.recommendation blockquote {
   width: 50%;
   background-color: var(--colour-grey-050);
   border-left: 8px solid var(--colour-grey-200);
@@ -34,30 +18,20 @@
   margin: 30px 0 40px 20px;
 }
 
-.position {
-  display: flex;
-  align-items: flex-start;
-}
-
-.position img {
-  margin-right: 6px;
-}
-
 @media only screen and (max-width: 1024px) {
-  .testimonial blockquote {
+  .recommendation blockquote {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .testimonial blockquote {
+  .recommendation blockquote {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .testimonial blockquote {
-    /* width: 100%; */
+  .recommendation blockquote {
     padding: 10px 20px;
     margin-left: 0;
   }

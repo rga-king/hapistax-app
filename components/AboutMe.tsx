@@ -12,12 +12,12 @@ export default function AboutMe() {
       <ul className={styles.aboutMeList}>
         <li>
           {" "}
-          <Link href={LINKEDIN_URL} target="_blank" rel="noopener">
+          <Link className="headingLink" href={LINKEDIN_URL} target="_blank" rel="noopener">
             LinkedIn
           </Link>
         </li>
         <li>
-          <Link href={TESTIMONIALS_LINK}>Recommendations</Link>
+          <Link className="headingLink" href={TESTIMONIALS_LINK}>Recommendations</Link>
         </li>
       </ul>
     </section>
