@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Project } from "@/lib/types";
 import Toolkit from "@/components/Toolkit";
 import Recommendation from "@/components/Recommendation";
-import { testimonials } from "@/data/testimonials";
+import { recommendations as allRecommendations } from "@/data/recommendations";
 import styles from "@/css/Project.module.css";
 import siteStyles from "@/css/Site.module.css";
 
@@ -14,7 +14,7 @@ type ProjectProps = {
 export default function Project ({ project }: ProjectProps) {
   const { heading, link, subtitle, timeline } = project.title;
   const { src, alt, width = 350, height = 300 } = project.image;
-  const recommendations = testimonials.filter((testimonial) => project.tag === testimonial.tag);
+  const recommendations = allRecommendations.filter((recommendation) => project.tag === recommendation.tag);
 
   return (
     <div className={`${styles.container} ${siteStyles.row}`}>
@@ -46,7 +46,13 @@ export default function Project ({ project }: ProjectProps) {
                   showText={false}
                 />
               ))}
-              <Link className={`${siteStyles.link} ${styles.recommendationsLink}`} href="/testimonials">SEE ALL RECOMMENDATIONS</Link>
+              <Link
+                className='link'
+                href="/testimonials"
+                data-link="recommendations"
+                >
+                  SEE ALL RECOMMENDATIONS
+                </Link>
             </div>
           )}
         </div>
